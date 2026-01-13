@@ -1,0 +1,460 @@
+{
+  "siteInfo": {
+    "nome": "Zenith",
+    "indirizzo": "Via Aga Khan 11, Promenade du Port",
+    "citta": "07021 Porto Cervo (SS)",
+    "telefono": "+39 389 115 1166",
+    "email": "zenithportocervo@gmail.com",
+    "orari": "Aperti tutti i giorni dalle 19:00 alle 23:00",
+    "credits": "Da Annamaria Casula, Luca Fadda, Daniele Loi, Roberto Tassara."
+  },
+  "pizze": [
+    {
+      "nome": "Bufalina",
+      "prezzo": "€35,00",
+      "descrizione": "Pomodoro San Marzano D.O.P., Mozzarella di Bufala Campana D.O.P. e pomodorini datterini della Calabria.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/bufala.png"
+    },
+    {
+      "nome": "Fumé",
+      "prezzo": "€35,00",
+      "descrizione": "Base bianca, Patate al forno a fette sottili, Speck dell'Alto Adige I.G.P., Scamorza affumicata e Rosmarino.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/fume.jpg"
+    },
+    {
+      "nome": "L'Origine",
+      "prezzo": "€31,00",
+      "descrizione": "Salsa di pomodoro, Fior di Latte, Salsiccia sarda fresca a punta di coltello, scaglie di Pecorino Sardo D.O.P.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/lorigine.png"
+    },
+    {
+      "nome": "Ignis",
+      "prezzo": "€25,00",
+      "descrizione": "Pomodoro San Marzano D.O.P., Mozzarella Fior di Latte, salame piccante calabrese e peperoni.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/diavola.png"
+    },
+    {
+      "nome": "Levante",
+      "prezzo": "€30,00",
+      "descrizione": "Pomodoro San Marzano D.O.P., Bufala Campana e verdure mediterranee grigliate.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/levante.jpg"
+    },
+    {
+      "nome": "Margherita",
+      "prezzo": "€20,00",
+      "descrizione": "Pomodoro San Marzano D.O.P., Fior di Latte di Agerola e basilico fresco.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/margherita.jpg"
+    },
+    {
+      "nome": "Quattro DOP",
+      "prezzo": "€28,00",
+      "descrizione": "Bufala Campana DOP, Gorgonzola DOP, Fontina Valdostana DOP e Parmigiano Reggiano 36 mesi DOP.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/4formaggi.png"
+    },
+    {
+      "nome": "Sottobosco",
+      "prezzo": "€37,00",
+      "descrizione": "Crema di tartufo bianco, Bufala Campana, porcini freschi e tartufo nero pregiato.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/bosco.jpg"
+    },
+    {
+      "nome": "Salina",
+      "prezzo": "€37,00",
+      "descrizione": "Base bianca, Fior di Latte, Acciughe del Cantabrico, Capperi di Salina, Zest di Limone.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/salina.png"
+    },
+    {
+      "nome": "Symphonia",
+      "prezzo": "€29,00",
+      "descrizione": "Pomodoro San Marzano DOP, Bufala, crudo di Parma, carciofi, olive taggiasche, porcini.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/symphonia.png"
+    },
+    {
+      "nome": "Tropea",
+      "prezzo": "€28,00",
+      "descrizione": "Pomodoro San Marzano DOP, Bufala, tonno rosso e cipolla di Tropea caramellata.",
+      "allergeni": [
+        "Latte",
+        "Glutine",
+        "Pesce"
+      ],
+      "immagine": "img/tropea.jpg"
+    },
+    {
+      "nome": "Zenith",
+      "prezzo": "€40,00",
+      "descrizione": "Crema di burrata, Gamberi rossi (a crudo), Bottarga, Tartufo fresco.",
+      "allergeni": [
+        "Latte",
+        "Glutine",
+        "Crostacei",
+        "Pesce"
+      ],
+      "immagine": "img/zenith.jpg"
+    }
+  ],
+  "dolci": [
+    {
+      "nome": "Cheesecake",
+      "prezzo": "€15,00",
+      "descrizione": "Cheesecake al caprino fresco con coulis di fichi e noci caramellate.",
+      "allergeni": [
+        "Latte",
+        "Frutta a guscio",
+        "Glutine"
+      ],
+      "immagine": "img/Cheesecake.png"
+    },
+    {
+      "nome": "Crème brûlée",
+      "prezzo": "€12,00",
+      "descrizione": "Alla vaniglia Tahiti con croccante di mandorle siciliane.",
+      "allergeni": [
+        "Latte",
+        "Uova",
+        "Frutta a guscio"
+      ],
+      "immagine": "img/Cremebrule.png"
+    },
+    {
+      "nome": "Gelato di Bufala",
+      "prezzo": "€10,00",
+      "descrizione": "Con perle di aceto balsamico tradizionale di Modena DOP.",
+      "allergeni": [
+        "Latte"
+      ],
+      "immagine": "img/Gelato.png"
+    },
+    {
+      "nome": "Millefoglie",
+      "prezzo": "€17,00",
+      "descrizione": "Pistacchio di Bronte e crema chantilly al limone di Amalfi.",
+      "allergeni": [
+        "Latte",
+        "Frutta a guscio",
+        "Glutine"
+      ],
+      "immagine": "img/Millefoglie.png"
+    },
+    {
+      "nome": "Seadas",
+      "prezzo": "€18,00",
+      "descrizione": "Con miele di corbezzolo e scorza d'arancia.",
+      "allergeni": [
+        "Latte",
+        "Glutine"
+      ],
+      "immagine": "img/Seadas.png"
+    },
+    {
+      "nome": "Tiramisù Pistacchio",
+      "prezzo": "€14,00",
+      "descrizione": "Con pistacchio di Bronte DOP.",
+      "allergeni": [
+        "Latte",
+        "Uova",
+        "Frutta a guscio",
+        "Glutine"
+      ],
+      "immagine": "img/Tiramisup.png"
+    },
+    {
+      "nome": "Tiramisù Tradizionale",
+      "prezzo": "€11,00",
+      "descrizione": "Savoiardi artigianali e caffè espresso.",
+      "allergeni": [
+        "Latte",
+        "Uova",
+        "Glutine"
+      ],
+      "immagine": "img/Tiramisu.png"
+    },
+    {
+      "nome": "Tortino al Cioccolato",
+      "prezzo": "€15,00",
+      "descrizione": "Cuore caldo Valrhona e foglia d'oro 24K.",
+      "allergeni": [
+        "Latte",
+        "Uova",
+        "Glutine"
+      ],
+      "immagine": "img/Tortino.png"
+    }
+  ],
+  "bevande": [
+    {
+      "nome": "Acqua Minerale 0,50L",
+      "prezzo": "€4.00",
+      "descrizione": "Naturale o Frizzante",
+      "immagine": "img/acqua.png"
+    },
+    {
+      "nome": "Acqua Minerale 1L",
+      "prezzo": "€6.00",
+      "descrizione": "Naturale o Frizzante",
+      "immagine": "img/acua.png"
+    },
+    {
+      "nome": "Coca Cola",
+      "prezzo": "€5.00",
+      "descrizione": "33cl",
+      "immagine": "img/coca.png"
+    },
+    {
+      "nome": "Fanta",
+      "prezzo": "€5.00",
+      "descrizione": "33cl",
+      "immagine": "img/fanta.png"
+    },
+    {
+      "nome": "Fever Tree Tonica",
+      "prezzo": "€6.00",
+      "descrizione": "Premium Tonic Water - 20cl",
+      "immagine": "img/toni.png"
+    },
+    {
+      "nome": "Sprite",
+      "prezzo": "€5.00",
+      "descrizione": "33cl",
+      "immagine": "img/sprite.png"
+    },
+    {
+      "nome": "Tè Freddo",
+      "prezzo": "€5.00",
+      "descrizione": "Limone o Pesca - 33cl",
+      "immagine": "img/the.png"
+    },
+    {
+      "nome": "Lemonsoda",
+      "prezzo": "€5.00",
+      "descrizione": "33cl",
+      "immagine": "img/lem.png"
+    },
+    {
+      "nome": "Ichnusa",
+      "prezzo": "€6.00",
+      "descrizione": "Birra sarda classica - 33cl",
+      "immagine": "img/ich.png"
+    },
+    {
+      "nome": "Ichnusa Non Filtrata",
+      "prezzo": "€7.00",
+      "descrizione": "Non pastorizzata - 33cl",
+      "immagine": "img/ichnf.png"
+    },
+    {
+      "nome": "Ichnusa Cruda",
+      "prezzo": "€7.50",
+      "descrizione": "Edizione speciale - 33cl",
+      "immagine": "img/ichc.png"
+    },
+    {
+      "nome": "Ichnusa al Limone",
+      "prezzo": "€7.00",
+      "descrizione": "Con note agrumate - 33cl",
+      "immagine": "img/ichl.png"
+    },
+    {
+      "nome": "Beck's",
+      "prezzo": "€6.50",
+      "descrizione": "Pilsner tedesca - 33cl",
+      "immagine": "img/beck.png"
+    },
+    {
+      "nome": "Heineken",
+      "prezzo": "€7.00",
+      "descrizione": "Premium lager - 33cl",
+      "immagine": "img/hk.png"
+    },
+    {
+      "nome": "Heineken 0.0",
+      "prezzo": "€6.00",
+      "descrizione": "Analcolica - 33cl",
+      "immagine": "img/hk0.png"
+    },
+    {
+      "nome": "Corona Extra",
+      "prezzo": "€8.00",
+      "descrizione": "Messicana premium - 33cl",
+      "immagine": "img/cor.png"
+    },
+    {
+      "nome": "Corona 0.0",
+      "prezzo": "€7.00",
+      "descrizione": "Analcolica - 33cl",
+      "immagine": "img/cor0.png"
+    },
+    {
+      "nome": "Warsteiner",
+      "prezzo": "€7.00",
+      "descrizione": "Premium pilsner - 33cl",
+      "immagine": "img/warst.png"
+    },
+    {
+      "nome": "Heineken Import (Piccola)",
+      "prezzo": "€5.00",
+      "descrizione": "0,20L",
+      "immagine": "img/hkimp.png"
+    },
+    {
+      "nome": "Heineken Import (Media)",
+      "prezzo": "€7.00",
+      "descrizione": "0,30L",
+      "immagine": "img/hkimp.png"
+    },
+    {
+      "nome": "Heineken Import (Grande)",
+      "prezzo": "€9.00",
+      "descrizione": "0,40L",
+      "immagine": "img/hkimp.png"
+    },
+    {
+      "nome": "Heineken Import (Maxi)",
+      "prezzo": "€11.00",
+      "descrizione": "0,50L",
+      "immagine": "img/hkimp.png"
+    },
+    {
+      "nome": "Karmis DOC - Contini",
+      "prezzo": "€38.00",
+      "descrizione": "Vermentino elegante. Calice €8.00 | Bottiglia €38.00",
+      "immagine": "img/karmis.png"
+    },
+    {
+      "nome": "Mamaioa DOC - Contini",
+      "prezzo": "€42.00",
+      "descrizione": "Cannonau. Calice €9.00 | Bottiglia €42.00",
+      "immagine": "img/mamaioa.png"
+    },
+    {
+      "nome": "Vermentino di Gallura DOCG - Sella & Mosca",
+      "prezzo": "€45.00",
+      "descrizione": "Aromatico e fresco. Calice €10.00 | Bottiglia €45.00",
+      "immagine": "img/sem.png"
+    },
+    {
+      "nome": "Intrecciato Rosso IGT - Ariu",
+      "prezzo": "€55.00",
+      "descrizione": "Blend raffinato. Calice €12.00 | Bottiglia €55.00",
+      "immagine": "img/ariu.png"
+    },
+    {
+      "nome": "Turriga Isola dei Nuraghi IGT 2019",
+      "prezzo": "€2.599,00",
+      "descrizione": "Antonio Argiolas. Il vino simbolo della Sardegna.",
+      "immagine": "turriga.png"
+    },
+    {
+      "nome": "Amaro del Capo",
+      "prezzo": "€6.00",
+      "descrizione": "Digestivo calabrese alle erbe",
+      "immagine": "img/delcapo.jpg"
+    },
+    {
+      "nome": "Amaro del Capo Piccante",
+      "prezzo": "€6.50",
+      "descrizione": "Versione speziata e intensa",
+      "immagine": "img/capopic.jpg"
+    },
+    {
+      "nome": "Amaro Montenegro",
+      "prezzo": "€6.00",
+      "descrizione": "Gusto di tutta Italia",
+      "immagine": "img/monte.jpg"
+    },
+    {
+      "nome": "Branca Menta",
+      "prezzo": "€6.50",
+      "descrizione": "Fresco e mentolato",
+      "immagine": "img/menta.jpg"
+    },
+    {
+      "nome": "Limoncello di Sorrento",
+      "prezzo": "€6.00",
+      "descrizione": "Fresco e agrumato",
+      "immagine": "img/lim.jpg"
+    },
+    {
+      "nome": "Mirto di Sardegna",
+      "prezzo": "€7.00",
+      "descrizione": "Liquore rosso tradizionale",
+      "immagine": "img/mirto.jpg"
+    },
+    {
+      "nome": "Mirto Bianco di Sardegna",
+      "prezzo": "€7.50",
+      "descrizione": "Elegante e delicato",
+      "immagine": "img/mirtob.jpg"
+    },
+    {
+      "nome": "Grappa Invecchiata",
+      "prezzo": "€8.00",
+      "descrizione": "Distillato di carattere",
+      "immagine": "img/grappai.jpg"
+    },
+    {
+      "nome": "Jägermeister",
+      "prezzo": "€7.00",
+      "descrizione": "Liquore tedesco alle erbe",
+      "immagine": "img/jager.jpg"
+    },
+    {
+      "nome": "Baileys Irish Cream",
+      "prezzo": "€7.50",
+      "descrizione": "Crema di whisky e cioccolato",
+      "immagine": "img/baileys.jpg"
+    },
+    {
+      "nome": "Martini Rosso",
+      "prezzo": "€6.00",
+      "descrizione": "Vermouth aromatico italiano",
+      "immagine": "img/martinir.jpg"
+    },
+    {
+      "nome": "Martini Bianco",
+      "prezzo": "€6.00",
+      "descrizione": "Vermouth dolce e vanigliato",
+      "immagine": "img/martini.jpg"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+module schema
+
+// 1. Definiamo come è fatto un Prodotto (Pizza, Dolce o Bibita)
+class Prodotto {
+    nome: String
+    prezzo: String 
+    descrizione: String?
+    allergeni: Listing<String>?
+    immagine: String 
+}
+
+// 2. Definiamo le informazioni generali del sito
+class InfoSito {
+    nome: String
+    indirizzo: String
+    citta: String
+    telefono: String
+    email: String
+    orari: String
+    credits: String
+}
+
+// 3. La struttura finale che conterrà tutti i dati
+siteInfo: InfoSito
+pizze: Listing<Prodotto>
+dolci: Listing<Prodotto>
+bevande: Listing<Prodotto>

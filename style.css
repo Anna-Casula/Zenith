@@ -1,0 +1,528 @@
+/* ==========================================================================
+   1. IMPOSTAZIONI GLOBALI E RESET
+   ========================================================================== */
+
+/* * Resetta i margini e i padding di tutti gli elementi.
+ * box-sizing: border-box assicura che padding e bordi non aumentino 
+ * la larghezza totale degli elementi dichiarata.
+ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* * Stile generale del corpo della pagina.
+ * Imposta il font principale (Palatino), il colore di sfondo grigio chiarissimo (#fafafa),
+ * il colore del testo principale e l'interlinea per la leggibilità.
+ */
+body {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    background-color: #fafafa;
+    color: #2c2c2c;
+    line-height: 1.8;
+}
+
+/* * Contenitore principale che racchiude il contenuto centrale delle pagine.
+ * Limita la larghezza massima a 1400px e la centra (margin: 0 auto).
+ */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 4rem 3rem;
+}
+
+/* * Stile generale per i titoli H2 (usati nelle sezioni Menu e Hero).
+ * Colore oro, font serif elegante, dimensione grande (3rem).
+ */
+h2 {
+    font-family: 'Palatino Linotype', serif;
+    color: #d4af37;
+    font-size: 3rem;
+    font-weight: 400; 
+    letter-spacing: 1px; 
+    margin: 0;
+}
+
+
+/* ==========================================================================
+   2. HEADER E NAVIGAZIONE (Presente in tutte le pagine)
+   ========================================================================== */
+
+/* * La barra superiore.
+ * Sfondo rosso bordeaux (#800000), posizionamento 'sticky' per rimanere
+ * attaccata in alto quando si scorre la pagina.
+ */
+header {
+    background: linear-gradient(to right, #800000, #800000);
+    padding: 3rem 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* * Contenitore interno dell'header.
+ * Usa Flexbox per separare il logo (sinistra) dal menu (destra).
+ */
+.header-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* * Il logo "ZENITH".
+ * Font Playfair Display in corsivo per eleganza, colore oro (#d4af37).
+ */
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #d4af37;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* * Link del menu di navigazione.
+ * Testo bianco, maiuscolo, con una transizione fluida per l'hover.
+ */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 2.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* * Effetto quando si passa il mouse sopra un link o quando è attivo.
+ * Il testo diventa color oro e appare una linea sottostante dorata.
+ */
+nav a:hover, nav a.active, .header-tiles.active {
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
+}
+
+
+/* ==========================================================================
+   3. HOME PAGE (index.html)
+   ========================================================================== */
+
+/* * Sezione principale della Home con immagine di sfondo.
+ * Centra il testo, aggiunge un bordo superiore dorato e gestisce l'immagine di background.
+ */
+.hero {
+    background-image: url("img/sfondo.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
+    padding: 8rem 4rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    border-top: 8px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto interattivo: l'intera sezione Hero si solleva leggermente al passaggio del mouse */
+.hero:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+    border-top-color: #800000; 
+}
+
+/* Testo descrittivo all'interno della Hero */
+.hero p {
+    font-size: 1.7rem;
+}
+
+/* * Griglia per le card informative nella Home (Dove siamo, Contatti, Tradizione).
+ * Usa grid layout che si adatta automaticamente alla larghezza.
+ */
+.info-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
+}
+
+/* * Stile delle card informative (Usate in Home e Chi Siamo).
+ * Sfondo bianco, bordo superiore dorato, ombra leggera.
+ */
+.info-card {
+    background: white;
+    border-top: 3px solid #d4af37;
+    padding: 2.5rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+/* Effetto hover sulle card: si sollevano e l'ombra diventa dorata */
+.info-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.4);
+    border-top-color: #800000;
+}
+
+/* Titoli interni alle card informative (H3) */
+.info-card h3 {
+    color: #80000;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Paragrafi interni alle card */
+.info-card p {
+    font-size: 1.02rem;
+    color: #4a4a4a;
+    line-height: 1.8;
+    margin-bottom: 0.8rem;
+}
+
+/* Link interni alle card (es. numero di telefono, email) */
+.info-card a {
+    color: #800000;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.info-card a:hover {
+    border-bottom: 1px solid #800000;
+}
+
+
+/* ==========================================================================
+   4. CHI SIAMO (Chisiamo.html)
+   ========================================================================== */
+
+/* Classe specifica per il riquadro della storia */
+.storia-card {
+    /* Imposta l'immagine come sfondo */
+    /* Il linear-gradient crea una patina bianca all'85% per leggere il testo */
+    background-image:url('img/sfondo2.png'); 
+    
+    background-size: cover;       /* L'immagine copre tutto il riquadro */
+    background-position: center;  /* Centra l'immagine */
+    background-repeat: no-repeat;
+    
+    /* Mantiene le proprietà delle altre card ma aggiunge un tocco lusso */
+    background-image:url('img/sfondo2.png'); 
+    border-top: 3px solid #8b4432;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.storia-card h2, 
+.storia-card h3 {
+    color: #d4af37 !important; /* Forza il colore Oro */
+    text-shadow: 1px 1px 0px rgba(0,0,0,0.1); /* Un leggero rilievo per staccarlo dallo sfondo chiaro */
+    border-bottom: 2px solid #d4af37; /* Anche la linea sotto diventa dorata */
+    padding-bottom: 10px;
+}
+
+.storia-card:hover {
+    /* Riduce leggermente la patina bianca al passaggio del mouse per mostrare meglio la foto */
+    background-image:url('img/sfondo2.png');
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
+}
+
+.contact-grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+    align-items: stretch; /* Mappa e info avranno la stessa altezza */
+}
+
+/* Stile specifico per il blocco dettagli contatti */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+}
+
+/* Tipografia per indirizzo, telefono ed email */
+.address, .phone, .email {
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    margin-bottom: 0.5rem;
+}
+
+/* Linea divisoria dorata decorativa tra le sezioni dei contatti */
+.separator-line {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #d4af37, transparent);
+    margin: 1.5rem 0;
+    width: 100%;
+}
+
+/* * Pulsanti Social Media (Instagram, Facebook, Deliveroo).
+ * Stile "ghost button" elegante: trasparente con bordo dorato e testo bordeaux.
+ */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background-color: transparent;
+    color: #800000 !important;
+    border: 1px solid #d4af37;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+
+/* Effetto hover pulsanti social: diventano sfondo bordeaux e testo oro */
+.social-btn:hover {
+    background-color: #800000;
+    color: #d4af37 !important;
+    border-color: #800000;
+    box-shadow: 0 5px 15px rgba(128, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Contenitore per la mappa Google Maps */
+.map-container {
+    border: 3px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* ==========================================================================
+   5. MENU CONDIVISO (Pizza.html, Dolci.html, Bevande.html)
+   ========================================================================== */
+
+/* Sezione bianca che contiene la griglia del menu */
+.menu-section {
+    background: white;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Titolo della sezione menu (es. "Menù Pizze") */
+.menu-section h2 {
+    color: #800000;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #d4af37;
+}
+
+/* Griglia che contiene le card dei prodotti (Pizze, Dolci, ecc.) */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* * Card del singolo prodotto.
+ * Bordo laterale sinistro dorato, sfondo leggermente grigio.
+ */
+.menu-item {
+    padding: 2rem;
+    border-left: 3px solid #d4af37;
+    background: #fafafa;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Effetto Hover sulla card del menu */
+.menu-item:hover {
+    background: white;
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(212, 175, 55, 0.4);
+    border-left-color: #800000; /* Il bordo laterale diventa rosso */
+}
+
+/* Contenitore flessibile per Titolo Prodotto e Prezzo (sulla stessa riga) */
+.title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+/* Titolo del prodotto (h3) */
+.menu-item h3 {
+    color: #800000;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Prezzo del prodotto */
+.menu-item .price {
+    color: #d4af37;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Cambia colore del prezzo quando si passa sopra la card */
+.menu-item:hover .price {
+    color: #800000;
+    transition: color 0.3s ease;
+}
+
+/* Mette in grassetto il titolo quando si passa sopra la card */
+.menu-item:hover h3 {
+    font-weight: 700;
+    transition: font-weight 0.3s ease;
+}
+
+/* Descrizione del prodotto e allergeni */
+.menu-item p {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+
+/* ==========================================================================
+   6. ELEMENTI SPECIFICI BEVANDE (Bevande.html)
+   ========================================================================== */
+
+/* * Layout specifico per la Birra alla Spina.
+ * Visualizza un'immagine grande a sinistra e la lista dei prezzi a destra.
+ */
+.draft-beer-layout {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Contenitore immagine birra */
+.draft-beer-image-container {
+    flex: 1; 
+    min-width: 40%;
+    max-width: 50%;
+    height: 100%;
+    border: 3px solid #d4af37; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden; 
+    align-self: flex-start;
+    transition: border 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.draft-beer-image-container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hover sull'intero blocco birra: illumina l'immagine */
+.draft-beer-layout:hover .draft-beer-image-container {
+    border: 3px solid #800000; 
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.9), 
+                0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Colonna lista prezzi birra alla spina */
+.draft-beer-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Modifiche specifiche per i riquadri della lista birra (più compatti) */
+.draft-beer-list .menu-item {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.draft-beer-list .menu-item .title-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* * Griglie specifiche per Vini e Amari.
+ * Sovrascrivono la griglia standard per mostrare card più piccole (es. 4 per riga).
+ */
+.amari-grid, .vini-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)) !important;
+}
+
+/* * Card Speciale Vino "Turriga".
+ */
+.turriga-card {
+    margin-top: 3rem;
+    padding: 3rem;
+    background: linear-gradient(135deg, #800000 0%, #600000 100%);
+    border: 3px solid #d4af37;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+    transition: all 0.4s ease;
+}
+
+.turriga-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+    border-color: #eac968;
+}
+
+
+/* ==========================================================================
+   7. FOOTER (Piè di pagina)
+   ========================================================================== */
+
+/* Sezione finale della pagina */
+footer {
+    background: linear-gradient(to right, #800000, #800000);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+footer p {
+    margin: 0.8rem 0;
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+}
+
+/* Crediti sviluppatori (in piccolo e dorato) */
+footer .credits {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(212
